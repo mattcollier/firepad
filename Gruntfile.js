@@ -67,6 +67,7 @@ module.exports = function (grunt) {
           "lib/undo-manager.js",
           "lib/client.js",
           "lib/editor-client.js",
+          "lib/alternate-adapter.js",
           "lib/ace-adapter.js",
           "lib/constants.js",
           "lib/entity-manager.js",
