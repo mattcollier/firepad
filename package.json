@@ -36,8 +36,9 @@
     "package.json"
   ],
   "dependencies": {
+    "firebase": "2.x",
     "jsdom": ">3",
-    "firebase": "2.x"
+    "lodash": "^3.10.1"
   },
   "devDependencies": {
     "coveralls": "^2.11.2",
