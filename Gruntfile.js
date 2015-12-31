@@ -61,7 +61,6 @@ module.exports = function (grunt) {
           "lib/text-operation.js",
           "lib/annotation-list.js",
           "lib/cursor.js",
-          "lib/firebase-adapter.js",
           "lib/rich-text-toolbar.js",
           "lib/wrapped-operation.js",
           "lib/undo-manager.js",
