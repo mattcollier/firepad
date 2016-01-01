@@ -34,6 +34,7 @@ module.exports = function(config) {
       "../lib/text-operation.js",
       "../lib/annotation-list.js",
       "../lib/cursor.js",
+      "../lib/alternate-adapter.js",
       "../lib/firebase-adapter.js",
       "../lib/rich-text-toolbar.js",
       "../lib/wrapped-operation.js",

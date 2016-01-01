@@ -45,6 +45,7 @@ describe('Integration tests', function() {
     });
   }
 
+  /*
   beforeEach(function(done) {
     // Make sure we're connected to Firebase.  This can take a while on slow
     // connections.
@@ -57,9 +58,15 @@ describe('Integration tests', function() {
       }
     });
   });
+  */
 
   it('Out-of-order edit', function (done) {
-    var ref = new Firebase('https://firepad-test.firebaseio-demo.com').push();
+    // var ref = new Firebase('https://firepad-test.firebaseio-demo.com').push();
+    var ref = {
+      server: 'https://sterns.t4k.org:3000',
+      document: 'testDocument', push: function() {
+        return {key: function() {return 'test_user';}};
+      }};
     var cm1 = CodeMirror(hiddenDiv());
     var cm2 = CodeMirror(hiddenDiv());
     var firepad1 = new Firepad(ref, cm1);
@@ -149,7 +156,7 @@ describe('Integration tests', function() {
     var cm = CodeMirror(hiddenDiv());
     var firepad = new Firepad(ref, cm, { defaultText: 'XXXXXXXX' });
     var startedSyncing = false;
-    
+
     firepad.on('ready', function() {
       randomOperation(cm);
       firepad.on('synced', function(synced) {
