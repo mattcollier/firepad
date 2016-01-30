@@ -38,8 +38,7 @@
     "changelog.txt"
   ],
   "dependencies": {
-    "jsdom": "3.x",
-    "socket.io": "~1.3.7"
+    "jsdom": "3.x"
   },
   "devDependencies": {
     "jasmine-core": "2.3.4",
